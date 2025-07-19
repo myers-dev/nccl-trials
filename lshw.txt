@@ -1,0 +1,790 @@
+104-171-203-106
+    description: Computer
+    product: Standard PC (Q35 + ICH9, 2009)
+    vendor: QEMU
+    version: pc-q35-8.0
+    width: 64 bits
+    capabilities: smbios-2.8 dmi-2.8 smp vsyscall32
+    configuration: boot=normal uuid=5188179d-38f1-4266-ba99-faf2ba888509
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-firmware
+          description: BIOS
+          vendor: SeaBIOS
+          physical id: 0
+          version: 1.13.0-1ubuntu1.1
+          date: 04/01/2014
+          size: 96KiB
+     *-cpu:0
+          description: CPU
+          product: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz
+          vendor: Intel Corp.
+          physical id: 400
+          bus info: cpu@0
+          version: 6.85.7
+          slot: CPU 0
+          size: 2GHz
+          capacity: 2GHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp x86-64 constant_tsc arch_perfmon rep_good nopl xtopology nonstop_tsc cpuid pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat vnmi umip pku ospke avx512_vnni md_clear arch_capabilities
+          configuration: cores=22 enabledcores=22 microcode=83898626 threads=2
+     *-cpu:1
+          description: CPU
+          product: Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz
+          vendor: Intel Corp.
+          physical id: 401
+          bus info: cpu@1
+          version: 6.85.7
+          slot: CPU 1
+          size: 2GHz
+          capacity: 2GHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp x86-64 constant_tsc arch_perfmon rep_good nopl xtopology nonstop_tsc cpuid pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat vnmi umip pku ospke avx512_vnni md_clear arch_capabilities
+          configuration: cores=22 enabledcores=22 microcode=83898626 threads=2
+     *-memory
+          description: System Memory
+          physical id: 1000
+          size: 448GiB
+          capabilities: ecc
+          configuration: errordetection=multi-bit-ecc
+        *-bank:0
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 0
+             slot: DIMM 0
+             size: 16GiB
+        *-bank:1
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 1
+             slot: DIMM 1
+             size: 16GiB
+        *-bank:2
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 2
+             slot: DIMM 2
+             size: 16GiB
+        *-bank:3
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 3
+             slot: DIMM 3
+             size: 16GiB
+        *-bank:4
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 4
+             slot: DIMM 4
+             size: 16GiB
+        *-bank:5
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 5
+             slot: DIMM 5
+             size: 16GiB
+        *-bank:6
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 6
+             slot: DIMM 6
+             size: 16GiB
+        *-bank:7
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 7
+             slot: DIMM 7
+             size: 16GiB
+        *-bank:8
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 8
+             slot: DIMM 8
+             size: 16GiB
+        *-bank:9
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 9
+             slot: DIMM 9
+             size: 16GiB
+        *-bank:10
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: a
+             slot: DIMM 10
+             size: 16GiB
+        *-bank:11
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: b
+             slot: DIMM 11
+             size: 16GiB
+        *-bank:12
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: c
+             slot: DIMM 12
+             size: 16GiB
+        *-bank:13
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: d
+             slot: DIMM 13
+             size: 16GiB
+        *-bank:14
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: e
+             slot: DIMM 14
+             size: 16GiB
+        *-bank:15
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: f
+             slot: DIMM 15
+             size: 16GiB
+        *-bank:16
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 10
+             slot: DIMM 16
+             size: 16GiB
+        *-bank:17
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 11
+             slot: DIMM 17
+             size: 16GiB
+        *-bank:18
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 12
+             slot: DIMM 18
+             size: 16GiB
+        *-bank:19
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 13
+             slot: DIMM 19
+             size: 16GiB
+        *-bank:20
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 14
+             slot: DIMM 20
+             size: 16GiB
+        *-bank:21
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 15
+             slot: DIMM 21
+             size: 16GiB
+        *-bank:22
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 16
+             slot: DIMM 22
+             size: 16GiB
+        *-bank:23
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 17
+             slot: DIMM 23
+             size: 16GiB
+        *-bank:24
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 18
+             slot: DIMM 24
+             size: 16GiB
+        *-bank:25
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 19
+             slot: DIMM 25
+             size: 16GiB
+        *-bank:26
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 1a
+             slot: DIMM 26
+             size: 16GiB
+        *-bank:27
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 1b
+             slot: DIMM 27
+             size: 16GiB
+     *-pci
+          description: Host bridge
+          product: 82G33/G31/P35/P31 Express DRAM Controller
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-display
+             description: VGA compatible controller
+             product: Virtio GPU
+             vendor: Red Hat, Inc.
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             logical name: /dev/fb0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msix vga_controller bus_master cap_list rom fb
+             configuration: depth=32 driver=virtio-pci latency=0 mode=1280x800 resolution=1280,800 visual=truecolor xres=1280 yres=800
+             resources: iomemory:b40-b3f irq:21 memory:fe000000-fe7fffff memory:b401000000-b401003fff memory:fd010000-fd010fff memory:c0000-dffff
+           *-virtio0 UNCLAIMED
+                description: Virtual I/O device
+                physical id: 0
+                bus info: virtio@0
+                configuration: driver=virtio_gpu
+        *-pci:0
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd011000-fd011fff memory:fce00000-fcffffff ioport:b400e00000(size=2097152)
+           *-storage
+                description: Mass storage controller
+                product: Virtio file system
+                vendor: Red Hat, Inc.
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: 01
+                width: 64 bits
+                clock: 33MHz
+                capabilities: storage msix pm pciexpress bus_master cap_list
+                configuration: driver=virtio-pci latency=0
+                resources: iomemory:b40-b3f irq:22 memory:fce00000-fce00fff memory:b400e00000-b400e03fff
+              *-virtio1 UNCLAIMED
+                   description: Virtual I/O device
+                   physical id: 0
+                   bus info: virtio@1
+                   configuration: driver=virtiofs
+        *-pci:1
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2.1
+             bus info: pci@0000:00:02.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd012000-fd012fff memory:fcc00000-fcdfffff ioport:b400c00000(size=2097152)
+           *-network
+                description: Ethernet controller
+                product: Virtio network device
+                vendor: Red Hat, Inc.
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                version: 01
+                width: 64 bits
+                clock: 33MHz
+                capabilities: msix pm pciexpress bus_master cap_list rom
+                configuration: driver=virtio-pci latency=0
+                resources: iomemory:b40-b3f irq:22 memory:fcc80000-fcc80fff memory:b400c00000-b400c03fff memory:fcc00000-fcc7ffff
+              *-virtio2
+                   description: Ethernet interface
+                   physical id: 0
+                   bus info: virtio@2
+                   logical name: eno1
+                   serial: 06:66:65:32:86:f7
+                   capabilities: ethernet physical
+                   configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=104.171.203.106 link=yes multicast=yes
+        *-pci:2
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2.2
+             bus info: pci@0000:00:02.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd013000-fd013fff ioport:f000(size=4096) memory:fca00000-fcbfffff ioport:b400a00000(size=2097152)
+           *-communication
+                description: Communication controller
+                product: Virtio console
+                vendor: Red Hat, Inc.
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                version: 01
+                width: 64 bits
+                clock: 33MHz
+                capabilities: msix pm pciexpress bus_master cap_list
+                configuration: driver=virtio-pci latency=0
+                resources: iomemory:b40-b3f irq:22 memory:fca00000-fca00fff memory:b400a00000-b400a03fff
+              *-virtio3 UNCLAIMED
+                   description: Virtual I/O device
+                   physical id: 0
+                   bus info: virtio@3
+                   configuration: driver=virtio_console
+        *-pci:3
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2.3
+             bus info: pci@0000:00:02.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd014000-fd014fff ioport:e000(size=4096) memory:fc800000-fc9fffff ioport:b400800000(size=2097152)
+           *-usb
+                description: USB controller
+                product: QEMU XHCI Host Controller
+                vendor: Red Hat, Inc.
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                version: 01
+                width: 64 bits
+                clock: 33MHz
+                capabilities: msix pciexpress xhci bus_master cap_list
+                configuration: driver=xhci_hcd latency=0
+                resources: irq:22 memory:fc800000-fc803fff
+              *-usbhost:0
+                   product: xHCI Host Controller
+                   vendor: Linux 6.8.0-60-generic xhci-hcd
+                   physical id: 0
+                   bus info: usb@1
+                   logical name: usb1
+                   version: 6.08
+                   capabilities: usb-2.00
+                   configuration: driver=hub slots=4 speed=480Mbit/s
+              *-usbhost:1
+                   product: xHCI Host Controller
+                   vendor: Linux 6.8.0-60-generic xhci-hcd
+                   physical id: 1
+                   bus info: usb@2
+                   logical name: usb2
+                   version: 6.08
+                   capabilities: usb-3.00
+                   configuration: driver=hub slots=4 speed=5000Mbit/s
+        *-pci:4
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2.4
+             bus info: pci@0000:00:02.4
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd015000-fd015fff ioport:d000(size=4096) memory:fc600000-fc7fffff ioport:b400600000(size=2097152)
+           *-scsi
+                description: SCSI storage controller
+                product: Virtio block device
+                vendor: Red Hat, Inc.
+                physical id: 0
+                bus info: pci@0000:05:00.0
+                version: 01
+                width: 64 bits
+                clock: 33MHz
+                capabilities: scsi msix pm pciexpress bus_master cap_list
+                configuration: driver=virtio-pci latency=0
+                resources: iomemory:b40-b3f irq:22 memory:fc600000-fc600fff memory:b400600000-b400603fff
+              *-virtio4
+                   description: Virtual I/O device
+                   physical id: 0
+                   bus info: virtio@4
+                   logical name: /dev/vda
+                   size: 6000GiB (6442GB)
+                   capabilities: gpt-1.00 partitioned partitioned:gpt
+                   configuration: driver=virtio_blk guid=4209af4b-16cf-4a4c-b948-437b469b5418 logicalsectorsize=512 sectorsize=512
+                 *-volume:0
+                      description: EXT4 volume
+                      vendor: Linux
+                      physical id: 1
+                      bus info: virtio@4,1
+                      logical name: /dev/vda1
+                      logical name: /
+                      version: 1.0
+                      serial: 9686db4d-2c4c-4029-a6ea-ca7b8bae111c
+                      size: 49GiB
+                      capacity: 5999GiB
+                      capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                      configuration: created=2025-07-02 10:52:19 filesystem=ext4 label=cloudimg-rootfs lastmountpoint=/ modified=2025-07-18 22:33:45 mount.fstype=ext4 mount.options=rw,relatime,discard,errors=remount-ro mounted=2025-07-18 22:33:47 state=mounted
+                 *-volume:1
+                      description: BIOS Boot partition
+                      vendor: EFI
+                      physical id: e
+                      bus info: virtio@4,14
+                      logical name: /dev/vda14
+                      serial: 327c3204-3559-4405-b5d9-1097f08d9857
+                      capacity: 4095KiB
+                      capabilities: nofs
+                 *-volume:2
+                      description: Windows FAT volume
+                      vendor: mkfs.fat
+                      physical id: f
+                      bus info: virtio@4,15
+                      logical name: /dev/vda15
+                      logical name: /boot/efi
+                      version: FAT32
+                      serial: f76c-dd6b
+                      size: 100MiB
+                      capacity: 105MiB
+                      capabilities: boot fat initialized
+                      configuration: FATs=2 filesystem=fat label=UEFI mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro state=mounted
+        *-pci:5
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2.5
+             bus info: pci@0000:00:02.5
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd016000-fd016fff ioport:b000(size=4096) memory:fc400000-fc5fffff ioport:b400400000(size=2097152)
+           *-scsi
+                description: SCSI storage controller
+                product: Virtio block device
+                vendor: Red Hat, Inc.
+                physical id: 0
+                bus info: pci@0000:06:00.0
+                version: 01
+                width: 64 bits
+                clock: 33MHz
+                capabilities: scsi msix pm pciexpress bus_master cap_list
+                configuration: driver=virtio-pci latency=0
+                resources: iomemory:b40-b3f irq:22 memory:fc400000-fc400fff memory:b400400000-b400403fff
+              *-virtio5
+                   description: Virtual I/O device
+                   physical id: 0
+                   bus info: virtio@5
+                   logical name: /dev/vdb
+                   size: 426KiB (436KB)
+                   configuration: driver=virtio_blk logicalsectorsize=512 sectorsize=512
+        *-pci:6
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2.6
+             bus info: pci@0000:00:02.6
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd017000-fd017fff ioport:a000(size=4096) memory:fb000000-fbffffff ioport:ac00000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:07:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:ac0-abf iomemory:b00-aff irq:248 memory:fb000000-fbffffff memory:ac00000000-afffffffff memory:b000000000-b001ffffff
+        *-pci:7
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 2.7
+             bus info: pci@0000:00:02.7
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:22 memory:fd018000-fd018fff ioport:9000(size=4096) memory:fa000000-faffffff ioport:a400000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:08:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:a40-a3f iomemory:a80-a7f irq:249 memory:fa000000-faffffff memory:a400000000-a7ffffffff memory:a800000000-a801ffffff
+        *-pci:8
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd019000-fd019fff ioport:8000(size=4096) memory:f9000000-f9ffffff ioport:9c00000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:09:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:9c0-9bf iomemory:a00-9ff irq:250 memory:f9000000-f9ffffff memory:9c00000000-9fffffffff memory:a000000000-a001ffffff
+        *-pci:9
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3.1
+             bus info: pci@0000:00:03.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd01a000-fd01afff ioport:7000(size=4096) memory:f8000000-f8ffffff ioport:9400000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:0a:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:940-93f iomemory:980-97f irq:254 memory:f8000000-f8ffffff memory:9400000000-97ffffffff memory:9800000000-9801ffffff
+        *-pci:10
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3.2
+             bus info: pci@0000:00:03.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd01b000-fd01bfff ioport:6000(size=4096) memory:f7000000-f7ffffff ioport:8c00000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:0b:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:8c0-8bf iomemory:900-8ff irq:251 memory:f7000000-f7ffffff memory:8c00000000-8fffffffff memory:9000000000-9001ffffff
+        *-pci:11
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3.3
+             bus info: pci@0000:00:03.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd01c000-fd01cfff ioport:5000(size=4096) memory:f6000000-f6ffffff ioport:8400000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:0c:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:840-83f iomemory:880-87f irq:255 memory:f6000000-f6ffffff memory:8400000000-87ffffffff memory:8800000000-8801ffffff
+        *-pci:12
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3.4
+             bus info: pci@0000:00:03.4
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd01d000-fd01dfff ioport:4000(size=4096) memory:f5000000-f5ffffff ioport:7c00000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:0d:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:7c0-7bf iomemory:800-7ff irq:252 memory:f5000000-f5ffffff memory:7c00000000-7fffffffff memory:8000000000-8001ffffff
+        *-pci:13
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3.5
+             bus info: pci@0000:00:03.5
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd01e000-fd01efff ioport:3000(size=4096) memory:f4000000-f4ffffff ioport:7400000000(size=34359738368)
+           *-display
+                description: 3D controller
+                product: GV100GL [Tesla V100 SXM2 16GB]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:0e:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=nvidia latency=0
+                resources: iomemory:740-73f iomemory:780-77f irq:253 memory:f4000000-f4ffffff memory:7400000000-77ffffffff memory:7800000000-7801ffffff
+        *-pci:14
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3.6
+             bus info: pci@0000:00:03.6
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd01f000-fd01ffff ioport:2000(size=4096) memory:fc200000-fc3fffff ioport:b400200000(size=2097152)
+           *-communication
+                description: Communication controller
+                product: Virtio socket
+                vendor: Red Hat, Inc.
+                physical id: 0
+                bus info: pci@0000:0f:00.0
+                version: 01
+                width: 64 bits
+                clock: 33MHz
+                capabilities: msix pm pciexpress bus_master cap_list
+                configuration: driver=virtio-pci latency=0
+                resources: iomemory:b40-b3f irq:23 memory:fc200000-fc200fff memory:b400200000-b400203fff
+              *-virtio6 UNCLAIMED
+                   description: Virtual I/O device
+                   physical id: 0
+                   bus info: virtio@6
+                   configuration: driver=vmw_vsock_virtio_transport
+        *-pci:15
+             description: PCI bridge
+             product: QEMU PCIe Root port
+             vendor: Red Hat, Inc.
+             physical id: 3.7
+             bus info: pci@0000:00:03.7
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msix normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:23 memory:fd020000-fd020fff ioport:1000(size=4096) memory:fc000000-fc1fffff ioport:b400000000(size=2097152)
+        *-isa
+             description: ISA bridge
+             product: 82801IB (ICH9) LPC Interface Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+           *-pnp00:00
+                product: PnP device PNP0501
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=serial
+           *-pnp00:01
+                product: PnP device PNP0303
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=i8042 kbd
+           *-pnp00:02
+                product: PnP device PNP0f13
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=i8042 aux
+           *-pnp00:03
+                product: PnP device PNP0b00
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:04
+                product: PnP device PNP0c01
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=system
+        *-sata
+             description: SATA controller
+             product: 82801IR/IO/IH (ICH9R/DO/DH) 6 port SATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             capabilities: sata msi ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:239 ioport:c040(size=32) memory:fd021000-fd021fff
+        *-serial
+             description: SMBus
+             product: 82801I (ICH9 Family) SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 02
+             width: 32 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:16 ioport:700(size=64)
+  *-input:0
+       product: Power Button
+       physical id: 1
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: AT Translated Set 2 keyboard
+       physical id: 2
+       logical name: input1
+       logical name: /dev/input/event1
+       logical name: input1::capslock
+       logical name: input1::numlock
+       logical name: input1::scrolllock
+       capabilities: i8042
+  *-input:2
+       product: ImExPS/2 Generic Explorer Mouse
+       physical id: 3
+       logical name: input3
+       logical name: /dev/input/event2
+       logical name: /dev/input/mouse0
+       capabilities: i8042

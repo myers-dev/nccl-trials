@@ -1,0 +1,329 @@
+# Launch Gemini Code assist on remote
+# From command panel - Gemeni Code Assist - start chat ( Cmd - Shift - P )
+
+Explore physical topology of the box
+
+> sudo apt install hwloc 
+> lstopo
+
+Machine (441GB total)
+  Package L#0
+    NUMANode L#0 (P#0 220GB)
+    L3 L#0 (16MB)
+      L2 L#0 (4096KB) + Core L#0
+        L1d L#0 (32KB) + L1i L#0 (32KB) + PU L#0 (P#0)
+        L1d L#1 (32KB) + L1i L#1 (32KB) + PU L#1 (P#1)
+      L2 L#1 (4096KB) + Core L#1
+        L1d L#2 (32KB) + L1i L#2 (32KB) + PU L#2 (P#2)
+        L1d L#3 (32KB) + L1i L#3 (32KB) + PU L#3 (P#3)
+      L2 L#2 (4096KB) + Core L#2
+        L1d L#4 (32KB) + L1i L#4 (32KB) + PU L#4 (P#4)
+        L1d L#5 (32KB) + L1i L#5 (32KB) + PU L#5 (P#5)
+      L2 L#3 (4096KB) + Core L#3
+        L1d L#6 (32KB) + L1i L#6 (32KB) + PU L#6 (P#6)
+        L1d L#7 (32KB) + L1i L#7 (32KB) + PU L#7 (P#7)
+      L2 L#4 (4096KB) + Core L#4
+        L1d L#8 (32KB) + L1i L#8 (32KB) + PU L#8 (P#8)
+        L1d L#9 (32KB) + L1i L#9 (32KB) + PU L#9 (P#9)
+      L2 L#5 (4096KB) + Core L#5
+        L1d L#10 (32KB) + L1i L#10 (32KB) + PU L#10 (P#10)
+        L1d L#11 (32KB) + L1i L#11 (32KB) + PU L#11 (P#11)
+      L2 L#6 (4096KB) + Core L#6
+        L1d L#12 (32KB) + L1i L#12 (32KB) + PU L#12 (P#12)
+        L1d L#13 (32KB) + L1i L#13 (32KB) + PU L#13 (P#13)
+      L2 L#7 (4096KB) + Core L#7
+        L1d L#14 (32KB) + L1i L#14 (32KB) + PU L#14 (P#14)
+        L1d L#15 (32KB) + L1i L#15 (32KB) + PU L#15 (P#15)
+      L2 L#8 (4096KB) + Core L#8
+        L1d L#16 (32KB) + L1i L#16 (32KB) + PU L#16 (P#16)
+        L1d L#17 (32KB) + L1i L#17 (32KB) + PU L#17 (P#17)
+      L2 L#9 (4096KB) + Core L#9
+        L1d L#18 (32KB) + L1i L#18 (32KB) + PU L#18 (P#18)
+        L1d L#19 (32KB) + L1i L#19 (32KB) + PU L#19 (P#19)
+      L2 L#10 (4096KB) + Core L#10
+        L1d L#20 (32KB) + L1i L#20 (32KB) + PU L#20 (P#20)
+        L1d L#21 (32KB) + L1i L#21 (32KB) + PU L#21 (P#21)
+      L2 L#11 (4096KB) + Core L#11
+        L1d L#22 (32KB) + L1i L#22 (32KB) + PU L#22 (P#22)
+        L1d L#23 (32KB) + L1i L#23 (32KB) + PU L#23 (P#23)
+      L2 L#12 (4096KB) + Core L#12
+        L1d L#24 (32KB) + L1i L#24 (32KB) + PU L#24 (P#24)
+        L1d L#25 (32KB) + L1i L#25 (32KB) + PU L#25 (P#25)
+      L2 L#13 (4096KB) + Core L#13
+        L1d L#26 (32KB) + L1i L#26 (32KB) + PU L#26 (P#26)
+        L1d L#27 (32KB) + L1i L#27 (32KB) + PU L#27 (P#27)
+      L2 L#14 (4096KB) + Core L#14
+        L1d L#28 (32KB) + L1i L#28 (32KB) + PU L#28 (P#28)
+        L1d L#29 (32KB) + L1i L#29 (32KB) + PU L#29 (P#29)
+      L2 L#15 (4096KB) + Core L#15
+        L1d L#30 (32KB) + L1i L#30 (32KB) + PU L#30 (P#30)
+        L1d L#31 (32KB) + L1i L#31 (32KB) + PU L#31 (P#31)
+      L2 L#16 (4096KB) + Core L#16
+        L1d L#32 (32KB) + L1i L#32 (32KB) + PU L#32 (P#32)
+        L1d L#33 (32KB) + L1i L#33 (32KB) + PU L#33 (P#33)
+      L2 L#17 (4096KB) + Core L#17
+        L1d L#34 (32KB) + L1i L#34 (32KB) + PU L#34 (P#34)
+        L1d L#35 (32KB) + L1i L#35 (32KB) + PU L#35 (P#35)
+      L2 L#18 (4096KB) + Core L#18
+        L1d L#36 (32KB) + L1i L#36 (32KB) + PU L#36 (P#36)
+        L1d L#37 (32KB) + L1i L#37 (32KB) + PU L#37 (P#37)
+      L2 L#19 (4096KB) + Core L#19
+        L1d L#38 (32KB) + L1i L#38 (32KB) + PU L#38 (P#38)
+        L1d L#39 (32KB) + L1i L#39 (32KB) + PU L#39 (P#39)
+      L2 L#20 (4096KB) + Core L#20
+        L1d L#40 (32KB) + L1i L#40 (32KB) + PU L#40 (P#40)
+        L1d L#41 (32KB) + L1i L#41 (32KB) + PU L#41 (P#41)
+      L2 L#21 (4096KB) + Core L#21
+        L1d L#42 (32KB) + L1i L#42 (32KB) + PU L#42 (P#42)
+        L1d L#43 (32KB) + L1i L#43 (32KB) + PU L#43 (P#43)
+  Package L#1
+    NUMANode L#1 (P#1 220GB)
+    L3 L#1 (16MB)
+      L2 L#22 (4096KB) + Core L#22
+        L1d L#44 (32KB) + L1i L#44 (32KB) + PU L#44 (P#44)
+        L1d L#45 (32KB) + L1i L#45 (32KB) + PU L#45 (P#45)
+      L2 L#23 (4096KB) + Core L#23
+        L1d L#46 (32KB) + L1i L#46 (32KB) + PU L#46 (P#46)
+        L1d L#47 (32KB) + L1i L#47 (32KB) + PU L#47 (P#47)
+      L2 L#24 (4096KB) + Core L#24
+        L1d L#48 (32KB) + L1i L#48 (32KB) + PU L#48 (P#48)
+        L1d L#49 (32KB) + L1i L#49 (32KB) + PU L#49 (P#49)
+      L2 L#25 (4096KB) + Core L#25
+        L1d L#50 (32KB) + L1i L#50 (32KB) + PU L#50 (P#50)
+        L1d L#51 (32KB) + L1i L#51 (32KB) + PU L#51 (P#51)
+      L2 L#26 (4096KB) + Core L#26
+        L1d L#52 (32KB) + L1i L#52 (32KB) + PU L#52 (P#52)
+        L1d L#53 (32KB) + L1i L#53 (32KB) + PU L#53 (P#53)
+      L2 L#27 (4096KB) + Core L#27
+        L1d L#54 (32KB) + L1i L#54 (32KB) + PU L#54 (P#54)
+        L1d L#55 (32KB) + L1i L#55 (32KB) + PU L#55 (P#55)
+      L2 L#28 (4096KB) + Core L#28
+        L1d L#56 (32KB) + L1i L#56 (32KB) + PU L#56 (P#56)
+        L1d L#57 (32KB) + L1i L#57 (32KB) + PU L#57 (P#57)
+      L2 L#29 (4096KB) + Core L#29
+        L1d L#58 (32KB) + L1i L#58 (32KB) + PU L#58 (P#58)
+        L1d L#59 (32KB) + L1i L#59 (32KB) + PU L#59 (P#59)
+      L2 L#30 (4096KB) + Core L#30
+        L1d L#60 (32KB) + L1i L#60 (32KB) + PU L#60 (P#60)
+        L1d L#61 (32KB) + L1i L#61 (32KB) + PU L#61 (P#61)
+      L2 L#31 (4096KB) + Core L#31
+        L1d L#62 (32KB) + L1i L#62 (32KB) + PU L#62 (P#62)
+        L1d L#63 (32KB) + L1i L#63 (32KB) + PU L#63 (P#63)
+      L2 L#32 (4096KB) + Core L#32
+        L1d L#64 (32KB) + L1i L#64 (32KB) + PU L#64 (P#64)
+        L1d L#65 (32KB) + L1i L#65 (32KB) + PU L#65 (P#65)
+      L2 L#33 (4096KB) + Core L#33
+        L1d L#66 (32KB) + L1i L#66 (32KB) + PU L#66 (P#66)
+        L1d L#67 (32KB) + L1i L#67 (32KB) + PU L#67 (P#67)
+      L2 L#34 (4096KB) + Core L#34
+        L1d L#68 (32KB) + L1i L#68 (32KB) + PU L#68 (P#68)
+        L1d L#69 (32KB) + L1i L#69 (32KB) + PU L#69 (P#69)
+      L2 L#35 (4096KB) + Core L#35
+        L1d L#70 (32KB) + L1i L#70 (32KB) + PU L#70 (P#70)
+        L1d L#71 (32KB) + L1i L#71 (32KB) + PU L#71 (P#71)
+      L2 L#36 (4096KB) + Core L#36
+        L1d L#72 (32KB) + L1i L#72 (32KB) + PU L#72 (P#72)
+        L1d L#73 (32KB) + L1i L#73 (32KB) + PU L#73 (P#73)
+      L2 L#37 (4096KB) + Core L#37
+        L1d L#74 (32KB) + L1i L#74 (32KB) + PU L#74 (P#74)
+        L1d L#75 (32KB) + L1i L#75 (32KB) + PU L#75 (P#75)
+      L2 L#38 (4096KB) + Core L#38
+        L1d L#76 (32KB) + L1i L#76 (32KB) + PU L#76 (P#76)
+        L1d L#77 (32KB) + L1i L#77 (32KB) + PU L#77 (P#77)
+      L2 L#39 (4096KB) + Core L#39
+        L1d L#78 (32KB) + L1i L#78 (32KB) + PU L#78 (P#78)
+        L1d L#79 (32KB) + L1i L#79 (32KB) + PU L#79 (P#79)
+      L2 L#40 (4096KB) + Core L#40
+        L1d L#80 (32KB) + L1i L#80 (32KB) + PU L#80 (P#80)
+        L1d L#81 (32KB) + L1i L#81 (32KB) + PU L#81 (P#81)
+      L2 L#41 (4096KB) + Core L#41
+        L1d L#82 (32KB) + L1i L#82 (32KB) + PU L#82 (P#82)
+        L1d L#83 (32KB) + L1i L#83 (32KB) + PU L#83 (P#83)
+      L2 L#42 (4096KB) + Core L#42
+        L1d L#84 (32KB) + L1i L#84 (32KB) + PU L#84 (P#84)
+        L1d L#85 (32KB) + L1i L#85 (32KB) + PU L#85 (P#85)
+      L2 L#43 (4096KB) + Core L#43
+        L1d L#86 (32KB) + L1i L#86 (32KB) + PU L#86 (P#86)
+        L1d L#87 (32KB) + L1i L#87 (32KB) + PU L#87 (P#87)
+  HostBridge
+    PCI 00:01.0 (VGA)
+    PCIBridge
+      PCI 01:00.0 (Storage)
+    PCIBridge
+      PCI 02:00.0 (Ethernet)
+        Net "eno1"
+    PCIBridge
+      PCI 05:00.0 (SCSI)
+        Block "vda"
+    PCIBridge
+      PCI 06:00.0 (SCSI)
+        Block "vdb"
+    PCIBridge
+      PCI 07:00.0 (3D)
+        CoProc(OpenCL) "opencl0d0"
+    PCIBridge
+      PCI 08:00.0 (3D)
+        CoProc(OpenCL) "opencl0d1"
+    PCIBridge
+      PCI 09:00.0 (3D)
+        CoProc(OpenCL) "opencl0d2"
+    PCIBridge
+      PCI 0a:00.0 (3D)
+        CoProc(OpenCL) "opencl0d3"
+    PCIBridge
+      PCI 0b:00.0 (3D)
+        CoProc(OpenCL) "opencl0d4"
+    PCIBridge
+      PCI 0c:00.0 (3D)
+        CoProc(OpenCL) "opencl0d5"
+    PCIBridge
+      PCI 0d:00.0 (3D)
+        CoProc(OpenCL) "opencl0d6"
+    PCIBridge
+      PCI 0e:00.0 (3D)
+        CoProc(OpenCL) "opencl0d7"
+    PCI 00:1f.2 (SATA)
+
+> lscpu
+
+Architecture:             x86_64
+  CPU op-mode(s):         32-bit, 64-bit
+  Address sizes:          46 bits physical, 48 bits virtual
+  Byte Order:             Little Endian
+CPU(s):                   88
+  On-line CPU(s) list:    0-87
+Vendor ID:                GenuineIntel
+  Model name:             Intel(R) Xeon(R) Gold 5220R CPU @ 2.20GHz
+    CPU family:           6
+    Model:                85
+    Thread(s) per core:   2
+    Core(s) per socket:   22
+    Socket(s):            2
+    Stepping:             7
+    BogoMIPS:             4399.97
+    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_
+                          good nopl xtopology nonstop_tsc cpuid pni pclmulqdq vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hyp
+                          ervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 er
+                          ms invpcid mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat vnmi umip pku ospke avx512_vnni md_c
+                          lear arch_capabilities
+Virtualization features:  
+  Virtualization:         VT-x
+Caches (sum of all):      
+  L1d:                    2.8 MiB (88 instances)
+  L1i:                    2.8 MiB (88 instances)
+  L2:                     176 MiB (44 instances)
+  L3:                     32 MiB (2 instances)
+NUMA:                     
+  NUMA node(s):           2
+  NUMA node0 CPU(s):      0-43
+  NUMA node1 CPU(s):      44-87
+Vulnerabilities:          
+  Gather data sampling:   Unknown: Dependent on hypervisor status
+  Itlb multihit:          Not affected
+  L1tf:                   Not affected
+  Mds:                    Not affected
+  Meltdown:               Not affected
+  Mmio stale data:        Vulnerable: Clear CPU buffers attempted, no microcode; SMT Host state unknown
+  Reg file data sampling: Not affected
+  Retbleed:               Mitigation; Enhanced IBRS
+  Spec rstack overflow:   Not affected
+  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+  Srbds:                  Not affected
+  Tsx async abort:        Mitigation; TSX disabled
+
+
+> lspci
+
+00:00.0 Host bridge: Intel Corporation 82G33/G31/P35/P31 Express DRAM Controller
+00:01.0 VGA compatible controller: Red Hat, Inc. Virtio GPU (rev 01)
+00:02.0 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:02.1 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:02.2 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:02.3 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:02.4 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:02.5 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:02.6 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:02.7 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.0 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.1 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.2 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.3 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.4 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.5 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.6 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:03.7 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+00:1f.0 ISA bridge: Intel Corporation 82801IB (ICH9) LPC Interface Controller (rev 02)
+00:1f.2 SATA controller: Intel Corporation 82801IR/IO/IH (ICH9R/DO/DH) 6 port SATA Controller [AHCI mode] (rev 02)
+00:1f.3 SMBus: Intel Corporation 82801I (ICH9 Family) SMBus Controller (rev 02)
+01:00.0 Mass storage controller: Red Hat, Inc. Virtio file system (rev 01)
+02:00.0 Ethernet controller: Red Hat, Inc. Virtio network device (rev 01)
+03:00.0 Communication controller: Red Hat, Inc. Virtio console (rev 01)
+04:00.0 USB controller: Red Hat, Inc. QEMU XHCI Host Controller (rev 01)
+05:00.0 SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)
+06:00.0 SCSI storage controller: Red Hat, Inc. Virtio block device (rev 01)
+07:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+08:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+09:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0a:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0b:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0c:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0d:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0e:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0f:00.0 Communication controller: Red Hat, Inc. Virtio socket (rev 01)
+
+> nvidia-smi topo -m
+
+
+        GPU0    GPU1    GPU2    GPU3    GPU4    GPU5    GPU6    GPU7    CPU Affinity    NUMA Affinity   GPU NUMA ID
+GPU0     X      NV1     NV1     NV2     NV2     PHB     PHB     PHB     0-87    0-1             N/A
+GPU1    NV1      X      NV2     NV1     PHB     NV2     PHB     PHB     0-87    0-1             N/A
+GPU2    NV1     NV2      X      NV2     PHB     PHB     NV1     PHB     0-87    0-1             N/A
+GPU3    NV2     NV1     NV2      X      PHB     PHB     PHB     NV1     0-87    0-1             N/A
+GPU4    NV2     PHB     PHB     PHB      X      NV1     NV1     NV2     0-87    0-1             N/A
+GPU5    PHB     NV2     PHB     PHB     NV1      X      NV2     NV1     0-87    0-1             N/A
+GPU6    PHB     PHB     NV1     PHB     NV1     NV2      X      NV2     0-87    0-1             N/A
+GPU7    PHB     PHB     PHB     NV1     NV2     NV1     NV2      X      0-87    0-1             N/A
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+
+> Installing nccl tests
+
+> Installing MPI 
+  sudo apt-get update && sudo apt-get install -y openmpi-bin libopenmpi-dev
+
+Compiling nccl tests
+
+make MPI=1 <-- error
+
+sudo apt install plocate
+sudo updatedb
+
+ubuntu@104-171-203-159:~/nccl-tesla/dev/nccl-tests$ locate mpi.h
+/usr/include/boost/mpi.hpp
+/usr/include/boost/graph/use_mpi.hpp
+/usr/include/boost/numeric/odeint/external/mpi/mpi.hpp
+/usr/lib/x86_64-linux-gnu/fortran/gfortran-mod-15/openmpi/mpi.h
+/usr/lib/x86_64-linux-gnu/fortran/gfortran-mod-15/openmpi/openmpi/ompi/mpi/fortran/mpif-h/prototypes_mpi.h
+/usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/fortran/mpif-h/prototypes_mpi.h
+/usr/mpi/gcc/openmpi-4.1.7rc1/include/mpi.h
+/usr/mpi/gcc/openmpi-4.1.7rc1/include/openmpi/ompi/mpi/fortran/mpif-h/prototypes_mpi.h
+/usr/src/linux-hwe-6.8-headers-6.8.0-60/include/linux/mpi.h
+
+>make MPI=1 MPI_HOME=/usr/mpi/gcc/openmpi-4.1.7rc1
+
+
+Example single node with 8 GPUs (-g 8), scanning from 8 Bytes to 128MBytes 
+
+>./build/all_reduce_perf -b 8 -e 128M -f 2 -g 8
