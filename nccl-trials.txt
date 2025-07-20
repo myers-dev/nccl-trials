@@ -333,3 +333,39 @@ Example single node with 8 GPUs (-g 8), scanning from 8 Bytes to 128MBytes
 
 ssh-keygen -t ed25519 -b 4096
 ssh-copy-id user@server
+
+# mpi - two hosts
+
+cat hosts.txt
+104.171.203.245 slots=1
+104.171.202.191 slots=1
+
+
+ubuntu@104-171-203-245:~/nccl-tests$ mpirun -np 2   ./build/all_reduce_perf -b 8 -e 8G -f 2 -g 1
+[1753023632.982860] [104-171-203-245:6783 :0]     ucp_context.c:1774 UCX  WARN  UCP version is incompatible, required: 1.18, actual: 1.12 (release 1)
+[1753023632.988568] [104-171-203-245:6784 :0]     ucp_context.c:1774 UCX  WARN  UCP version is incompatible, required: 1.18, actual: 1.12 (release 1)
+[1753023633.006568] [104-171-203-245:6784 :0]     ucp_context.c:1774 UCX  WARN  UCP version is incompatible, required: 1.18, actual: 1.12 (release 1)
+[1753023633.007017] [104-171-203-245:6783 :0]     ucp_context.c:1774 UCX  WARN  UCP version is incompatible, required: 1.18, actual: 1.12 (release 1)
+# nThread 1 nGpus 1 minBytes 8 maxBytes 8589934592 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+104-171-203-245: Test CUDA failure common.cu:1030 'invalid device ordinal'
+ .. 104-171-203-245 pid 6784: Test failure common.cu:937
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[7901,1],1]
+  Exit code:    2
+--------------------------------------------------------------------------
+
+
+ mpirun --hostfile hosts.txt -np 2 build/all_reduce_perf -b 8 -e 8G -f 2 -g 1
+
+
+ monitor mpi run : watch -n 1 nvidia-smi
+ 
