@@ -368,4 +368,13 @@ the job to be terminated. The first process to do so was:
 
 
  monitor mpi run : watch -n 1 nvidia-smi
- 
+
+ capture : sudo tcpdump host 104.171.203.245 -w nccl_run.pcap
+
+ ### How to check if NIC is RDMA capable ?
+
+ lspci -nnk | grep -i -A3 'ethernet\|infiniband'
+
+ ibv_devinfo - Check RDMA Verbs Support via ibv_devinfo
+
+ rdma dev
