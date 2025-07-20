@@ -327,3 +327,9 @@ ubuntu@104-171-203-159:~/nccl-tesla/dev/nccl-tests$ locate mpi.h
 Example single node with 8 GPUs (-g 8), scanning from 8 Bytes to 128MBytes 
 
 >./build/all_reduce_perf -b 8 -e 128M -f 2 -g 8
+
+
+# passwordless 
+
+ssh-keygen -t ed25519 -b 4096
+ssh-copy-id user@server
